@@ -1,11 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 20px;
     background-color: #f0f0f0;
+}
+.header-portfolio{
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    z-index: 3;
+    top: 0;
+    flex-wrap: wrap; /* Allows wrapping if space is constrained */
+}
+
+/* Centering the Logo and Nav Links */
+.logo-landing,
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.logo-landing {
+    width:30%;
+    margin-right: 50px;
+}
+
+.logo-landing a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-landing img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo-landing span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #e94e1b;
+}
+
+.logo-text {
+    font-family: "Barlow Condensed", sans-serif;
+}
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: hsl(6, 58%, 44%);
+    font-weight: 500;
+}
+.hire-button {
+    padding: 5px 20px;
+    color: white !important;
+    background-color: #b31b1b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.hire-button span {
+    color: white !important;
+}
+
+.hire-button::after {
+    content: "WhatsApp";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-size: 13px;
+}
+
+.hire-button:hover {
+    background-color: #075E54;
+}
+
+.hire-button:hover span {
+    opacity: 0;
+}
+
+.hire-button:hover::after {
+    opacity: 1;
+}
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px; 
 }
 .nav-bar {
     display: flex;
@@ -23,12 +124,28 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 .nav-bar button:hover {
-    color: rgb(255, 98, 0);
+    color: #b31b1b;
 }
 .nav-bar button.active {
-    background-color: rgb(255, 98, 0);
+    background-color: #b31b1b;
     color: #fff;
-    border:  rgb(255, 98, 0) ;
+    border:  #b31b1b ;
+}
+.full-width-portfolio-banner {
+    margin-top: 0;
+    width: 100%;
+    background-color: rgb(240, 238, 238);
+    padding: 0 auto;
+    margin-bottom: 70px;
+  }
+
+.full-width-portfolio-banner img {
+    width: 100% !important; 
+    max-width: 1600px !important; 
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important; /* Center the image horizontally */
+    max-width: 1200px;
 }
 .grid-container {
     display: grid;
