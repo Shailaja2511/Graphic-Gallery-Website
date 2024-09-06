@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.testimonials {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 1200px;    /* Max width it can grow */
+    min-width: 300px; 
+}
+
+/* Hide testimonials section on very small screens */
+@media (max-width: 780px) {
+    .testimonials {
+        display: none !important;
+    }
+}
+
+.container {
+    margin: auto;
+    padding: 40px 10px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 200;
+}
+
+.section-header .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.testimonials-item {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; 
+}
+.testimonials-item .text-box {
+    text-align: left;
+    margin-left: 100px; /* indentation */
+}
+
+.testimonials-item .info {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-item img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.testimonials-item .name {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: black;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    margin-left: -100px; /* Same indentation as text-box */
+}
+
+
+.testimonials-item .job {
+    text-transform: capitalize;
+    color: hsl(0, 0%, 40%);
+    margin-left: -100px;  /*Same indentation as text-box */
+}
+
+.testimonials-item p {
+    margin-top: 20px;
+    color: hsl(0, 0%, 40%);
+    margin-left: 100px; /* Same indentation as text-box */
+}
+
+.testimonials-item .rating {
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+    margin-left: 100px; /* Same indentation as text-box */
+}
+.testimonials-item {
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+
+.testimonials-item:hover {
+    background-color: rgba(169, 168, 168, 0.5); 
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    bottom: -30px; /* Move the buttons below the slides */
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+}
+
+.swiper-slide {
+    width: calc(50% - 15px); 
+    box-sizing: border-box; 
+}
+
+.swiper-button-prev {
+    left: 50%; 
+    transform: translateX(-120%); 
+}
+
+.swiper-button-next {
+    left: 50%; 
+    transform: translateX(20%); 
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 13px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+
+.swiper-nav-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px; 
+}

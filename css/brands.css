@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+.logoScrolling-section{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(232, 230, 230);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.brands-section {
+    width: 100%;
+    text-align: center;
+    
+}
+.logoScrolling-section h2{
+    text-align: center;
+    margin: 40px auto 0;
+    font-weight: 200;
+}
+
+.logoScrolling-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+    margin-top: 3px;
+}
+
+
+.highlight {
+    color: #ba0707;
+}
+
+.logos {
+    width: 100%; 
+    text-align: center;
+    overflow: hidden;
+    padding: 50px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 auto 100px;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 70px;
+    margin: 0 40px;
+}
+.sizingMess{
+    height: 60px !important;
+}
+.sizingLia{
+    height: 75px !important;
+}
+.sizingLyca{
+    height: 75px !important;
+}
+.sizingKarudaa{
+    height: 65px !important;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .logoScrolling-section h2 {
+        font-size: 1.25rem; 
+        margin: 30px auto 0;
+    }
+    .logoScrolling-section h1 {
+        font-size: 2rem; 
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoScrolling-section h2 {
+        font-size: 1rem; 
+        margin: 20px auto 0;
+    }
+    .logoScrolling-section h1 {
+        font-size: 1.5rem; 
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoScrolling-section h2 {
+        font-size: 0.875rem; 
+        margin: 15px auto 0;
+    }
+    .logoScrolling-section h1 {
+        font-size: 1.25rem; 
+        margin-bottom: 15px;
+    }
+}

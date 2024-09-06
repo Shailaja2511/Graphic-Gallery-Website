@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.nav-bar button {
+    padding: 10px 20px;
+    border: 1px solid rgb(188, 187, 187);
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #0a0a31;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-bar button:hover {
+    color: rgb(255, 98, 0);
+}
+.nav-bar button.active {
+    background-color: rgb(255, 98, 0);
+    color: #fff;
+    border:  rgb(255, 98, 0) ;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 70%;
+}
+.grid-container.business-card-layout,
+.grid-container.menu-layout
+{
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+}
+.grid-container.print-design-layout {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+}
+.grid-item {
+    width: 100%;
+    padding-bottom: 100%; /* Aspect ratio 1:1 */
+    background-size: cover;
+    background-position: center;
+}
+.grid-container.menu-layout .grid-item {
+    padding-bottom: 141.4%; /*A4 aspect ratio (1:1.414) */
+}
+.hidden {
+    display: none;
+}
+#full-image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: blink 0.3s ease-in-out;
+}
+#menu .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 20px; /* Spacing between grid items */
+    justify-items: center; /* Center items horizontally */
+    width: 200%;
+}
+
+#menu .menu-item {
+    width: 100%;
+    padding-bottom: 141.4%; /* Maintain A4 aspect ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+#menu .menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#menu .arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#menu .arrow.up {
+    top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu .arrow.down {
+    bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+

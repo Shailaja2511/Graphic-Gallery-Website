@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.button-section {
+    margin-top: 60px;
+    width: 100%;
+    background-color: #ededed;
+    padding-bottom: 80px;
+    padding-top: 50px;
+   
+}
+
+.button-section h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.button-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.highlight {
+    color: #b31b1b;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.button-container {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 1200px;
+}
+.button {
+    position: relative;
+    padding: 10px 40px;
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #b31b1b;
+    background: none;
+    border: none;
+    z-index: 1;
+    transition: color 0.3s ease;
+    height: auto;
+}
+.button:hover {
+    color: #ffffff !important;
+}
+#facebook:hover ~ .buttonSection-light {
+    background-color: #3b5998;
+}
+
+#instagram:hover ~ .buttonSection-light {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+#linkedin:hover ~ .buttonSection-light {
+    background-color: #0077b5;
+}
+
+#behance:hover ~ .buttonSection-light {
+    background-color: #1769ff;
+}
+
+#youtube:hover ~ .buttonSection-light {
+    background-color: #ff0000;
+}
+
+.buttonSection-light {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 0;
+    height: calc(100% - 20px);
+    background-color: transparent;
+    border-radius: 10px;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .button-section h1 {
+        font-size: 2rem; 
+    }
+    
+    .button {
+        font-size: 1.4rem; 
+        padding: 8px 30px; 
+    }
+
+    .button-container {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 992px) {
+    .button-section h1 {
+        font-size: 1.8rem; 
+    }
+    
+    .button {
+        font-size: 1.2rem; 
+        padding: 6px 15px; 
+    }
+
+    .button-container {
+        width: 85%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .button-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .button {
+        font-size: 0.7rem; 
+        padding: 5px 25px; 
+    }
+
+    .button-container {
+        width: 95%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .button-section h1 {
+        font-size: 1em; 
+    }
+    
+    .button {
+        font-size: 0.7rem; 
+        padding: 5px 15px;
+    }
+
+    .button-container {
+        width: 95%; 
+    }
+}
+@media (max-width: 480px) {
+    .button-section {
+        padding-bottom: 40px;
+    }
+
+    .button-container {
+        width: 95%;
+        padding: 5px; 
+    }
+
+    .button {
+        padding: 5px 5px;
+        font-size: 0.7rem; 
+    }
+}
+

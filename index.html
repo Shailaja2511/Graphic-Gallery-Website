@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Gallery</title>
+    <!--Landing Page Links-->
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!--Experience Page Links-->
+    <link rel="stylesheet" href="css/experience.css">
+    <!--Services Page Links-->
+     <!-- Add Flaticon CSS CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/services.css">
+     <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-p1Cm6YKozK1P1cKgx4e3nSxkBB1Yk1XrO6e5lybX4Vq5N9zpzKQZupLDrXU6tM1G9LrK+nQ/jTfQ8zIx7U5Ykg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+     <!--Brands Page Links-->
+     <link rel="stylesheet" href="css/brands.css">
+     <!--works Page Links-->
+     <link rel="stylesheet" href="css/works.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <!--Banner Page Links-->
+     <link rel="stylesheet" href="css/banner.css">
+
+     <!--Testimonials Page Links-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <link rel="stylesheet" href="css/testimonial.css">
+
+     <!--Buttons Page Links-->
+     <link rel="stylesheet" href="css/buttons.css">
+
+     <!--footer Page Links-->
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!--Landing Page Section Starts Here-->
+    <section class="landing-page">
+        <header class="header">
+            <div class="logo-landing">
+                <a href="#">
+                    <img src="image/limage/logo.jpg" alt="Logo">
+                    <span class="logo-text">GRAPHIC GALLERY</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio/portfolio.html" target="_blank">Portfolio</a>
+                <a href="#" class="hire-button"><span>Hire Us</span></a>
+            </div>
+        </header>
+        
+        <div class="landing">
+            <div class="cta-section">
+                <h1>Share your story through <br> <span class="typing-effect"></span> </h1>
+                <p class="description">
+                    Express your unique experiences through the power of creative design. Transform personal narratives into captivating visuals that resonate and connect with others. 
+                </p>
+                <div class="button-landing">
+                    <a href="#" class="cta-button">Watch now</a>
+                    <div class="play-button-container">
+                        <div class="wave-animation"></div>
+                        <div class="play-button" id="playButton">
+                            <span> ▶ </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hidden YouTube Video Popup -->
+                <div class="video-popup" id="videoPopup">
+                    <div>class="video-popup-content">
+                        <span class="close-button" id="closeButton">&times;</span>
+                        <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/7_qnWnkwCxQ?si=ZoxgWgfYhXf9r5SM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <!-- First image sliding right -->
+                <div class="slider-row">
+                    <div class="image-wrapper right">
+                        <img src="image/limage/COVER_IMAGE_RAW_01.png" alt="Scrolling Image Right">
+                        <img src="image/limage/COVER_IMAGE_RAW_01.png" alt="Scrolling Image Right">
+                    </div>
+                </div>
+                
+                <!-- Second image sliding left -->
+                <div class="slider-row">
+                    <div class="image-wrapper left">
+                        <img src="image/limage/COVER_IMAGE_RAW_02.png" alt="Scrolling Image Left">
+                        <img src="image/limage/COVER_IMAGE_RAW_02.png" alt="Scrolling Image Left">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+        // JavaScript for Typing Animation
+        document.addEventListener("DOMContentLoaded", function() {
+            const typingSpan = document.querySelector('.typing-effect');
+            const text = "creative design";
+            let index = 0;
+    
+            function type() {
+                typingSpan.classList.remove('hidden'); // Show the text
+                if (index < text.length) {
+                    typingSpan.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100); // Adjust typing speed here (faster)
+                } else {
+                    // Pause briefly, then start clearing
+                    setTimeout(clear, 1000); // Pause for 1 second before clearing
+                }
+            }
+    
+            function clear() {
+                if (index > 0) {
+                    typingSpan.textContent = text.slice(0, index - 1);
+                    index--;
+                    setTimeout(clear, 100); // Adjust clearing speed here (same speed)
+                } else {
+                    // Pause before typing again
+                    typingSpan.classList.add('hidden'); // Hide the text
+                    setTimeout(() => {
+                        typingSpan.classList.remove('hidden'); // Show the text again
+                        type(); // Start typing again
+                    }, 500); // Pause for 0.5 seconds before restarting
+                }
+            }
+    
+            // Start typing after a brief delay
+            setTimeout(type, 1000); // Start typing after 1 second
+        });
+    
+        //button effect
+        document.addEventListener('DOMContentLoaded', function() {
+        const playButton = document.getElementById('playButton');
+        const closeButton = document.getElementById('closeButton');
+        const videoPopup = document.getElementById('videoPopup');
+        const youtubeVideo = document.getElementById('youtubeVideo');
+    
+        // Store the original src URL
+        const originalSrc = youtubeVideo.src;
+    
+        playButton.addEventListener('click', function() {
+            // Set the src with autoplay=1
+            youtubeVideo.src = originalSrc.includes('autoplay=1') ? originalSrc : originalSrc + '?autoplay=1';
+            videoPopup.style.display = 'flex';
+        });
+    
+        closeButton.addEventListener('click', function() {
+            // Stop the video by clearing the src
+            youtubeVideo.src = '';
+            videoPopup.style.display = 'none';
+        });
+    
+        videoPopup.addEventListener('click', function(event) {
+            // Close the popup if the background is clicked (not the video or content)
+            if (event.target === videoPopup) {
+                youtubeVideo.src = '';
+                videoPopup.style.display = 'none';
+            }
+        });
+    });
+    
+    
+</script>
+    </section>
+    <!--Landing Page Section Ends Here-->
+
+    <!--Experience Page Section Starts Here-->
+    <div class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item">
+            <h2>03 Years</h2>
+            <p>Successful History</p>
+        </div>
+        <div class="stat-item">
+            <h2>98%</h2>
+            <p>Customer Satisfaction</p>
+        </div>
+        <div class="stat-item">
+            <h2>1000+ Projects</h2>
+            <p>We have completed</p>
+        </div>
+        <div class="stat-item">
+            <h2>50+ </h2>
+            <p>Valuable Clients</p>
+        </div>
+    </div>
+</div>
+    <!--Experience Page Section Ends Here-->
+
+    <!--Services Page Section Starts Here-->
+    <section class="services-section">
+        <h2>Services</h2>
+        <h1>How Can <span class="highlight">We Help You</span> </h1>
+        <div class="cards-container-wrapper">
+        <div class="cards-container">
+            <!--Branding Solutions-->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-palette"></i>
+                    <!--<img src="image/icons/branding.png" class="icons" alt="">-->
+                </div>
+                <h3>Branding Solutions</h3>
+                <p>Create a strong and memorable brand identity with our expert branding solutions.</p>
+                
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <!--Social Media Design-->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <!--<img src="image/icons/webdesign.png" class="icons" alt="">-->
+                </div>
+                <h3>Social Media Design</h3>
+                <p>Enhance your online presence with custom social media designs tailored to your brand.</p>
+                
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <!--Printable Design-->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-print"></i>
+                    <!--<img src="image/icons/printable.png" class="icons" alt="">-->
+                </div>
+                <h3>Printable Design</h3>
+                <p>Get high-quality, eye-catching printable designs for all your marketing needs.</p>
+                
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <!--Video Creation-->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-video"></i>
+                    <!--<img src="image/icons/video.png" class="icons" alt="">-->
+                </div>
+                <h3>Video Creation</h3>
+                <p>Engage your audience with compelling video content crafted by our creative team.</p>
+                
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <!--Social Media Handling-->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-share-alt"></i>
+                    <!--<img src="image/icons/smhandling.png" class="icons" alt="">-->
+                </div>
+                <h3>Social Media Handling</h3>
+                <p>Let us manage your social media platforms to boost engagement and grow your brand.</p>
+                
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <!--Web Development-->
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                    <!--<img src="image/icons/webdevelopment.png" class="icons" alt="">-->
+                </div>
+                <h3>Web Development</h3>
+                <p>Build a dynamic and user-friendly website that drives results and showcases your brand.</p>
+                
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </section>
+    <!--Services Page Section Ends Here-->
+    <!--Brands Page Section Starts Here-->
+    <section class="logoScrolling-section">
+        <h2 class="brands-section">Happy Client</h2>
+        <h1 class="brands-section">Brands That Trust Our<span class="highlight"> Designers</span></h1>
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="image/Blogo/Lyca.png" class="sizingLyca" />
+            <img src="image/Blogo/Rajah.png" class="sizingRajah" />
+            <img src="image/Blogo/Morrisons.png" class="sizingMorrisons" />
+            <img src="image/Blogo/Shell Tessidde.png" class="sizingTeesside" />
+            <img src="image/Blogo/Karudaa.png" class="sizingKarudaa"/>
+            <img src="image/Blogo/Chanakaimess.png" class="sizingMess"/>
+            <img src="image/Blogo/Lia.png" class="sizingLia"/>
+            <img src="image/Blogo/UBH.png" class="sizingUthaya" />
+            <img src="image/Blogo/Fluxs.png" class="sizingFluxs" />
+            
+          </div>
+    
+          <div class="logos-slide">
+            <img src="image/Blogo/Lyca.png" class="sizingLyca" />
+            <img src="image/Blogo/Rajah.png" class="sizingRajah" />
+            <img src="image/Blogo/Morrisons.png" class="sizingMorrisons" />
+            <img src="image/Blogo/Shell Tessidde.png" class="sizingTeesside" />
+            <img src="image/Blogo/Karudaa.png" class="sizingKarudaa"/>
+            <img src="image/Blogo/Chanakaimess.png" class="sizingMess"/>
+            <img src="image/Blogo/Lia.png" class="sizingLia"/>
+            <img src="image/Blogo/UBH.png" class="sizingUthaya" />
+            <img src="image/Blogo/Fluxs.png" class="sizingFluxs" />
+            
+          </div>
+        </div>
+    </div>
+      </section>
+
+    <!--Brands Page Section Ends Here-->
+    <!--Our Works Section Starts Here-->
+    <div class="full-section">
+        <h2>Design Ideas</h2>
+        <h1>Create unique design <span class="highlight">for your business</span> </h1>
+    <div class="main-wrapper">
+        <!-- Left Image, Right Content -->
+        <div class="left-section">
+            <img src="image/wimage/BRANDING.png" alt="Collaborate and Go Live">
+        </div>
+        <div class="right-section">
+            <h1 class="work-heading">Brand Identity: What You Can Do</h1>
+            <div class="info-box">
+                <h3><span class="icon"><i class="fa-solid fa-palette"></i></span> Consistent Visual Identity</h3>
+                <p>Create a cohesive visual identity with your logo, color scheme, and typography to enhance brand recognition and trust. Consistency makes your brand more memorable to your audience.</p>
+            </div>
+            <div class="info-box">
+                <h3><span class="icon"><i class="fa-solid fa-pen-nib"></i></span> Engaging Content Strategy</h3>
+                <p>Share high-quality, relevant content that resonates with your target audience and reflects your brands voice. Engaging content fosters connections and encourages interactions.</p>
+            </div>
+            <div class="info-box">
+                <h3><span class="icon"><i class="fa-solid fa-mobile-alt"></i></span> Responsive and User-Friendly Design</h3>
+                <p>Design your website and platforms for responsiveness and ease of use to improve user experience. A user-friendly site encourages greater engagement, especially on mobile devices.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <!-- Left Content, Right Image -->
+        <div class="left-section">
+            <h1 class="work-heading">Social Media Success: Design, Schedule, Boost</h1>
+            <div class="info-box">
+                <h3><span class="icon"><i class="fa-solid fa-image"></i></span> Design Meaningful Posters</h3>
+                <p>Create visually appealing posters that convey your brand message using consistent colors and logos. Compelling visuals and copy capture attention and encourage engagement.
+                </p>
+            </div>
+            <div class="info-box">
+                <h3><span class="icon"><i class="fa-solid fa-calendar-alt"></i></span> Schedule Your Posts</h3>
+                <p>Use scheduling tools to automate your social media posts for consistent sharing. This approach helps maintain audience engagement with a mix of content.
+                </p>
+            </div>
+            <div class="info-box">
+                <h3><span class="icon"><i class="fa-solid fa-bullhorn"></i></span> Boost Your Content</h3>
+                <p>Boost your posts to increase visibility and reach a larger audience. Target specific demographics to engage potential customers effectively.</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="image/wimage/SOCIAL_MEDIA_REACH.png" alt="Collaborate and Go Live">
+        </div>
+    </div>
+</div>
+    <!--Our Works Section Ends Here-->
+    <!--Image Section Starts Here-->
+    <div class="full-width-banner">
+        <img src="image/banner/AD.png" alt="Banner Image">
+    </div>
+    <!--Image Section Ends Here-->
+
+    <!--Testimonials Page Starts Here-->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <h1 class="title">What our <span class="highlight">clients say</span> </h1>
+            </div>
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+        <!--1-->
+        <div class="swiper-slide testimonials-item">
+        <div class="info">
+        <img src="image/timage/LOGO_01.jpg" alt="">
+        <div class="text-box">
+        <h3 class="name">Shailu</h3>
+        <span class="job">Web Developer</span>
+        </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto facere excepturi numquam optio ab laborum dolor doloribus qui ipsam!</p>
+        <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        </div>
+        </div>
+        <!--2-->
+        <div class="swiper-slide testimonials-item">
+        <div class="info">
+        <img src="image/timage/LOGO_02.jpg" alt="">
+        <div class="text-box">
+        <h3 class="name">shaila</h3>
+        <span class="job">web designer</span>
+        </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto facere excepturi numquam optio ab laborum dolor doloribus qui ipsam!</p>
+        <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        </div>
+        </div>
+        <!--3-->
+        <div class="swiper-slide testimonials-item">
+        <div class="info">
+        <img src="image/timage/LOGO_03.jpg" alt="">
+        <div class="text-box">
+        <h3 class="name">shaila</h3>
+        <span class="job">web designer</span>
+        </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto facere excepturi numquam optio ab laborum dolor doloribus qui ipsam!</p>
+        <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        </div>
+        </div>
+        <!--4-->
+        <div class="swiper-slide testimonials-item">
+        <div class="info">
+        <img src="image/timage/LOGO_04.jpg" alt="">
+        <div class="text-box">
+        <h3 class="name">shaila</h3>
+        <span class="job">web designer</span>
+        </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto facere excepturi numquam optio ab laborum dolor doloribus qui ipsam!</p>
+        <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        </div>
+        </div>
+
+        <!--5-->
+        <div class="swiper-slide testimonials-item">
+            <div class="info">
+            <img src="image/timage/LOGO_05.jpg" alt="">
+            <div class="text-box">
+            <h3 class="name">shaila</h3>
+            <span class="job">web designer</span>
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto facere excepturi numquam optio ab laborum dolor doloribus qui ipsam!</p>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            </div>
+            </div>
+
+            <!--6-->
+        <div class="swiper-slide testimonials-item">
+            <div class="info">
+            <img src="image/timage/LOGO_06.jpg" alt="">
+            <div class="text-box">
+            <h3 class="name">shaila</h3>
+            <span class="job">web designer</span>
+            </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto facere excepturi numquam optio ab laborum dolor doloribus qui ipsam!</p>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            </div>
+            </div>
+        
+        
+                        
+        </div>
+        </div>
+        <!-- New container for the navigation arrows -->
+                <div class="swiper-nav-container">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+    
+    </section>
+    <script>
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween: 30,
+            slidesPerView: 2,  // Show two slides at a time
+            slidesPerGroup: 2, // Move two slides at a time
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: false 
+        });
+    </script>
+    <!--Testimonials Page Ends Here-->
+
+    <!--Buttons Page Starts Here-->
+    <section class="button-section">
+        <h2>Social Media</h2>
+        <h1>Connect with <span class="highlight">Graphic Gallery</span> </h1>
+        <div class="button-wrapper">
+            <div class="button-container">
+                <a href="www.facebook.com" target="_blank" class="button active" id="facebook">Facebook</a>
+                <a href="https://www.instagram.com/graphicgallerylk/" target="_blank"class="button" id="instagram">Instagram</a>
+                <a href="www.linkedin.com" target="_blank"class="button" id="linkedin">LinkedIn</a>
+                <a href="www.behance.com" target="_blank"class="button" id="behance">Behance</a>
+                <a href="https://www.youtube.com/" target="_blank"class="button" id="youtube">YouTube</a>
+                <div class="buttonSection-light"></div>
+            </div>
+        </div>
+    
+    <script src="js/button.js">
+        
+    </script>  
+    </section>
+
+    <!--Buttons Page Ends Here-->
+    <!--footer Page Starts Here-->
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="#"><img src="image/fimage/GG-WHITE-LOGO.png" class="img-logo" alt=""></a>
+            <div class="contact-info">
+                <a href="#">graphicgallery@gmail.com</a>
+                <a href="#">+94 77 6455 809</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="address">
+                <p><i class="fas fa-map-marker-alt"></i>No 234, Bhakya Mawatha Colombo</p>
+            </div>
+            <div class="footer-links">
+                <p>Graphic Gallery.com © 2024. All rights reserved</p>
+                <a href="#">Privacy policy</a> <span>|</span>
+                <a href="#">Terms of services</a>
+            </div>
+        </div>
+    </footer>
+    <!--footer Page Ends Here-->
+</body>
+</html>
