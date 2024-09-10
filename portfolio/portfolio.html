@@ -298,5 +298,32 @@ buttons.forEach(button => {
         </div>
     </footer>
     <!--footer Page Ends Here-->
+    <!--animation for all pages-->
+    <script>
+        // Function to add 'show' class to elements in view
+function animateOnScroll() {
+    const gridItems = document.querySelectorAll('.grid-item');
+    const screenPosition = window.innerHeight;
+
+    gridItems.forEach(item => {
+        const itemPosition = item.getBoundingClientRect().top;
+
+        if (itemPosition < screenPosition - 100) {
+            item.classList.add('show');
+        } else {
+            item.classList.remove('show');
+        }
+    });
+}
+
+// Initial check to show items on load
+document.addEventListener('DOMContentLoaded', () => {
+    animateOnScroll(); // Initial call to handle elements in view on page load
+});
+
+// Event listener for scrolling
+window.addEventListener('scroll', animateOnScroll);
+
+    </script>
 </body>
 </html>
