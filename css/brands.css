@@ -32,24 +32,25 @@ body {
     text-align: center;
     
 }
-.logoScrolling-section h2{
-    text-align: center;
-    margin: 40px auto 0;
-    font-weight: 200;
-}
-
-.logoScrolling-section h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 40px;
+h2 {
     font-family: "Lexend Deca", sans-serif;
     text-align: center;
-    margin-top: 3px;
+    margin-bottom: 0;
+    font-weight: 200;
+    color: #333; 
 }
 
+h1 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 3px 0 40px 0; /* Adjusted margin-top */
+    text-align: center;
+    color: #333; 
+}
 
 .highlight {
-    color: #ba0707;
+    color: #b31b1b;
 }
 
 .logos {

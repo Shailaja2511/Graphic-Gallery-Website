@@ -44,6 +44,13 @@
     text-decoration: none;
     margin-left: 20px;
     font-size: 0.9rem;
+    display: flex; 
+    align-items: center;
+}
+.contact-info a i {
+    margin-right: 8px; 
+    font-size: 1rem; 
+    color: #ffffff; 
 }
 
 .contact-info a:hover {
@@ -78,11 +85,11 @@
 }
 
 .footer-links p {
-    margin-right: 20px;
+    margin-right: 0;
     font-size: 0.9rem;
 }
 
-.footer-links a {
+/*.footer-links a {
     color: #4A4A4A;
     text-decoration: none;
     font-size: 0.9rem;
@@ -90,10 +97,10 @@
 
 .footer-links a:hover {
     text-decoration: underline;
-}
+}*/
 .footer-links span {
     color: #4A4A4A;
-    margin: 0 20px; /* margin for spacing around the "|" symbol */
+    margin: 0; /* margin for spacing around the "|" symbol */
     font-size: 0.9rem;
 }
 /* Responsive Styles */
