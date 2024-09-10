@@ -91,10 +91,10 @@ h1 {
     left: 0; 
     top: 0; 
     background-color: #ebe1e1; 
-    padding: 8px; 
+    padding: 0.5rem; 
     border-radius: 4px; 
     color: #b31b1b; 
-    font-size: 1.4vw; 
+    font-size: 1.5rem; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,17 +103,16 @@ h1 {
 
 .info-box h3 {
     font-family: "Lexend Deca", sans-serif;
-    font-size: 1.4vw; 
-    margin: 0 0 10px 0; /* Remove margin to align top with icon */
+    font-size: 1.2rem; 
+    margin-bottom: 8px; /* Remove margin to align top with icon */
 }
 
 .info-box p {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 350;
-    font-size: 1.1vw; 
+    font-size: 1rem; 
     line-height: 1.8;
     color: #555;
-    margin: 0; 
 }
 
 .main-wrapper.reverse-layout .right-section {

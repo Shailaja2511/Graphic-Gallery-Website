@@ -16,6 +16,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: rgb(232, 230, 230);
+    padding-top: 40px;
 }
 
 @keyframes slide {

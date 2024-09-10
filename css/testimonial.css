@@ -56,22 +56,26 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     text-align: left; 
+    position: relative;
 }
 .testimonials-item .text-box {
-    text-align: left;
-    margin-left: 100px; /* indentation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .testimonials-item .info {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
 }
 
 .testimonials-item img {
     max-width: 80px;
     border-radius: 50%;
     margin-right: 20px;
-    vertical-align: middle;
 }
 
 .testimonials-item .name {
@@ -80,21 +84,20 @@ h1 {
     font-weight: 600;
     color: black;
     line-height: 1.2;
-    margin-bottom: 5px;
-    margin-left: -100px; /* Same indentation as text-box */
+    margin-bottom: 2px;
+    
 }
 
 
 .testimonials-item .job {
     text-transform: capitalize;
     color: hsl(0, 0%, 40%);
-    margin-left: -100px;  /*Same indentation as text-box */
 }
 
 .testimonials-item p {
     margin-top: 20px;
     color: hsl(0, 0%, 40%);
-    margin-left: 100px; /* Same indentation as text-box */
+    margin-left: 25px; /* Same indentation as text-box */
 }
 
 .testimonials-item .rating {
