@@ -170,6 +170,9 @@ h1 {
         padding: 10px;
         margin: 40px auto; 
     }
+    .main-wrapper:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
     .left-section img {
         width: 100%;
     }

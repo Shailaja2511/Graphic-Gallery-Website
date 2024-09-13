@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-body {
+html,body {
     font-family: "Lexend Deca", sans-serif;
     margin: 0;
     padding: 0;
@@ -9,10 +9,12 @@ body {
     overflow-x: hidden;
 }
 .header {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 20px 0px;
     background-color: white;
     z-index: 3;
     top: 0;
@@ -27,8 +29,7 @@ body {
 }
 
 .logo-landing {
-    width:30%;
-    margin-right: 50px;
+
 }
 
 .logo-landing a {
@@ -104,6 +105,11 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 10px; 
+}
+.landing-page{
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100vw;
 }
 
 /* CTA Section */
@@ -330,6 +336,9 @@ h1 {
     .image-wrapper img {
         max-height: 60vh;
     }
+    h1:first-of-type{
+        font-size:1.7rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -409,8 +418,8 @@ h1 {
 
 @media (max-width: 768px) {
     .logo-landing {
-        width: 50%;
-        margin-right: 20px;
+        /* width: 50%;
+        margin-right: 20px; */
     }
 
     .logo-landing img {
@@ -463,7 +472,6 @@ h1 {
 
 @media (max-width: 480px) {
     .logo-landing {
-        width: 60%;
         margin-right: 10px;
     }
 

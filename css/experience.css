@@ -14,10 +14,12 @@ body {
     width: 100%; 
     display: flex; 
     justify-content: center; /* Center the child horizontally */
+    margin-left: 0px;
+    margin-right: auto;
 }
 
 .stats-container {
-    margin: 100px auto;
+    margin: 9vh auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

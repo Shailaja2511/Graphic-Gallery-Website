@@ -247,13 +247,15 @@ body {
 }
 
 #menu .arrow.up {
-    top: 5px;
+    bottom: 5px;
+    margin-left: -25px;
     font-size: 20px;
     font-weight: bold;
 }
 
 #menu .arrow.down {
     bottom: 5px;
+    margin-left: 25px;
     font-size: 20px;
     font-weight: bold;
 }
