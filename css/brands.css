@@ -58,7 +58,7 @@ h1 {
     width: 100%; 
     text-align: center;
     overflow: hidden;
-    padding: 50px 0;
+    padding: 3.5vh 0;
     background: white;
     white-space: nowrap;
     position: relative;
@@ -115,8 +115,38 @@ h1 {
 
 @media (max-width: 480px) {
     .logoScrolling-section h2 {
-        font-size: 0.875rem; 
+        font-size: 1rem; 
         margin: 15px auto 0;
+    }
+    .logos{
+        padding: 3vh 0px;
+        margin: 0px auto 60px;
+    }
+    .logos-slide img {
+        height: 60px;
+        margin: 0 40px;
+    }
+    .sizingMess{
+        height: 60px !important;
+    }
+    .sizingLia{
+        height: 75px !important;
+    }
+    .sizingLyca{
+        height: 75px !important;
+    }
+    .sizingKarudaa{
+        height: 65px !important;
+    }
+    .sizingUthaya{
+        height: 65px !important;
+    }
+    .sizingFluxus{
+        height: 65px !important;
+    }
+
+    .logos:hover .logos-slide {
+        animation-play-state: running;
     }
     .logoScrolling-section h1 {
         font-size: 1.25rem; 

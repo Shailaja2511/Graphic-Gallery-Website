@@ -18,6 +18,9 @@
 /* Hide the banner on small screens */
 @media (max-width: 768px) {
     .full-width-banner {
-        display: none;
+        display: block;
+        margin-top: 0;
+        background-color: rgb(240, 238, 238);
+        padding: 0px 0 20px 0px;
     }
 }

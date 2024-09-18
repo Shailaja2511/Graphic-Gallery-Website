@@ -167,11 +167,11 @@ h1 {
     .main-wrapper {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 0px 10px;
         margin: 40px auto; 
     }
     .main-wrapper:nth-of-type(2) {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .left-section img {
         width: 100%;
@@ -211,12 +211,20 @@ h1 {
 
 @media (max-width: 480px) {
     .main-wrapper {
-        width: 95%;
-        margin: 20px auto; 
+        width: 90%;
+        margin: 0px auto; 
     }
     .full-section h1 {
         font-size: 5vw;
     }
+    .full-section h2 {
+        font-size: 1rem; 
+        margin: 15px auto 0;
+    }
+    .full-section .highlight{
+        display: block;
+    }
+
     .work-heading {
         font-size: 5vw;
         margin-left: 10px;

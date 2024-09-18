@@ -18,11 +18,16 @@ body {
     border-radius: 10px; 
     box-sizing: border-box; 
     position: relative; /* proper layout of child elements */
+    padding: 40px 0px;
 }
 .cards-container-wrapper {
     width: 80%; 
     max-width: 1200px;
-    margin: 60px auto 100px; /* Center the container */
+    margin-top: 60px; /* Center the container */
+    margin-bottom: 30px; /* Center the container */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    
     box-sizing: border-box; 
 }
 
@@ -170,7 +175,7 @@ h1 {
 
 @media (max-width: 480px) {
     .services-section h2 {
-        font-size: 0.875rem;
+        font-size: 1rem;
         margin-bottom: 5px; 
     }
     .services-section h1 {

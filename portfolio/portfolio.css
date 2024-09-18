@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-body {
+html,body {
     font-family: "Lexend Deca", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0;
     margin: 0;
     background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 .header-portfolio{
     width: 100%;
 }
-.header{
+
+.header {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 20px 0px;
     background-color: white;
     z-index: 3;
     top: 0;
@@ -30,8 +32,7 @@ body {
 }
 
 .logo-landing {
-    width:30%;
-    margin-right: 50px;
+
 }
 
 .logo-landing a {
@@ -55,12 +56,16 @@ body {
     font-family: "Barlow Condensed", sans-serif;
 }
 .nav-links a {
-    font-family: "Lexend Deca", sans-serif;
     margin: 0 15px;
     text-decoration: none;
     font-size: 15px;
     color: hsl(6, 58%, 44%);
     font-weight: 500;
+}
+.header-portfolio{
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100vw;
 }
 .hire-button {
     padding: 5px 20px;
@@ -113,6 +118,8 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .nav-bar button {
     padding: 10px 20px;
@@ -151,8 +158,10 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 10vw;
+    margin-right: 10vw;
     gap: 15px;
-    width: 70%;
+    width: 80%;
 }
 .grid-container.business-card-layout,
 .grid-container.menu-layout
@@ -167,14 +176,14 @@ body {
     padding-bottom: 100%; /* Aspect ratio 1:1 */
     background-size: cover;
     background-position: center;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
     transition-delay: 0.3s; 
 }
 .grid-item.show {
     opacity: 1;
-    transform: translateY(0);
+    transform:  translateY(20px);
     transition-delay: 0s;
 }
 .grid-item:nth-child(1) {
@@ -215,7 +224,9 @@ body {
     grid-template-columns: 1fr 1fr; /* Two-column layout */
     gap: 20px; /* Spacing between grid items */
     justify-items: center; /* Center items horizontally */
-    width: 200%;
+    width: 60vw;
+    margin-left: 10vw;
+    margin-right:auto;
 }
 
 #menu .menu-item {
@@ -238,12 +249,14 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #b31b1b;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     z-index: 10;
+    font-weight: 800;
+    border-radius:8px  ;
 }
 
 #menu .arrow.up {
@@ -295,5 +308,126 @@ body {
     .grid-container.menu-layout .grid-item {
         padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio or adjust as needed */
         /* Or use the specific ratio for your design */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-landing {
+        /* width: 50%;
+        margin-right: 20px; */
+    }
+
+    .logo-landing img {
+        height: 25px;
+    }
+
+    .logo-landing span {
+        font-size: 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        margin: 0 8px;
+    }
+
+    .hire-button {
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        line-height: 4.5vh;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .play-button-container {
+        width: 45px;
+        height: 45px;
+    }
+
+    .play-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .play-button span {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    .logo-landing {
+        margin-right: 10px;
+    }
+
+    .logo-landing img {
+        height: 20px;
+    }
+
+    .logo-landing span {
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .hire-button {
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 4vh;
+    }
+
+    .description {
+        font-size: 0.7rem;
+        width: 92%;
+        margin: 0px auto 10px auto;
+    }
+    .image-container{
+        width: 200%;
+    }
+
+    .cta-button {
+        padding: 8px 15px;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .play-button-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .play-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .play-button span {
+        font-size: 16px;
+    }
+
+    #menu .menu-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Two-column layout */
+        gap: 20px; /* Spacing between grid items */
+        justify-items: center; /* Center items horizontally */
+        width: 75vw;
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
     }
 }
