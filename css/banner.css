@@ -1,18 +1,17 @@
 .full-width-banner {
     margin-top: 0;
     width: 100%;
-    background-color: rgb(240, 238, 238);
+    background-color: var(--color-2);
     padding: 40px 0 80px;
   
 }
 
 .full-width-banner img {
     width: 100% !important; 
-    max-width: 1600px !important; 
+    /* max-width: 1600px !important;  */
     height: auto !important;
     display: block !important;
     margin: 0 auto !important; /* Center the image horizontally */
-    max-width: 1200px;
 }
 
 /* Hide the banner on small screens */

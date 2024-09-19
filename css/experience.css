@@ -10,7 +10,7 @@ body {
     
 }
 .stats-section {
-    background-color: rgb(233, 230, 230);
+    background-color: var( --color-1);
     width: 100%; 
     display: flex; 
     justify-content: center; /* Center the child horizontally */
@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 75%;
-    background-color: white;
+    background-color:var(--color-27);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1200px;    /* Max width it can grow */
@@ -44,7 +44,7 @@ body {
 }
 
 .stat-item:not(:last-child) {
-    border-right: 2.5px solid #232222; /* Increase border thickness */
+    border-right: 2.5px solid var( --color-16); /* Increase border thickness */
     height: 55px; 
     align-self: center; 
 }
@@ -54,13 +54,13 @@ body {
     font-weight: 600;
     font-size: 26px;
     margin-bottom: 0;
-    color: #000000;
+    color: var(--color-17);
 }
 
 .stat-item p {
     font-family: "Lexend Deca", sans-serif;
     font-size: 18px;
-    color: #5a5a5a;
+    color: var(--color-18);
     margin-top: 5px;
 }
 
@@ -89,7 +89,7 @@ body {
 
     }
     .stats-section{
-        background-color: #FFFFFF;
+        background-color: var( --color-5);
         height: fit-content;
 
     }
@@ -101,7 +101,7 @@ body {
         margin: 3%;
         height: auto;
         align-self: center;
-        background-color: #fefefe;
+        background-color: var(--color-19);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
     }

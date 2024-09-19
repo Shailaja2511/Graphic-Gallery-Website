@@ -36,7 +36,7 @@ h2 {
     text-align: center;
     margin-bottom: 0;
     font-weight: 200;
-    color: #333; 
+    color: var( --color-3); 
 }
 
 h1 {
@@ -45,11 +45,11 @@ h1 {
     font-weight: 700;
     margin: 3px 0 40px 0; /* Adjusted margin-top */
     text-align: center;
-    color: #333; 
+    color: var( --color-3); 
 }
 
 .highlight {
-    color: #b31b1b;
+    color: var( --color-4);
 }
 .testimonials-item {
     background-color: rgb(255, 255, 255);

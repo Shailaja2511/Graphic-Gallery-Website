@@ -1,11 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root {
+    --color-1: #F9F9F9;
+    --color-2: #ededed;
+    --color-3:  #333;
+    --color-4:#b31b1b;
+    --color-5:#fff;
+    --color-6:#fac;
+    --color-7:#3b5998;
+    --color-8:#f09433;
+    --color-9:#e6683c;
+    --color-10:#dc2743;
+    --color-11:#cc2366;
+    --color-12:#bc1888;
+    --color-13:#0077b5;
+    --color-14:#1769ff;
+    --color-15:#ff0000;
+    --color-16:#232222;
+    --color-17:#000;
+    --color-18:#5a5a5a;
+    --color-19:#fefefe;
+    --color-20:#f3f3f3;
+    --color-21:#e94e1b;
+    --color-22:#075E54;
+    --color-23:#c52020;
+    --color-24:#fff;
+    --color-25:#000;
+    --color-26:#ececec;
+    --color-27:#f3f0f0;
+    --color-28:#f5f4f4;
+    --color-29:#666;
+    --color-30:#ebe1e1;
+    --color-31:#555;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --color-1: #1a1a1a;
+    --color-2: #2b2b2b;
+    --color-3:  #e0e0e0;
+    --color-4:  #ff4c4c;
+    --color-5:  #333;
+    --color-6:  #ffcccb;
+    --color-7:  #3b5998; /* Social media colors often remain the same */
+    --color-8:  #f09433; /* Social media colors often remain the same */
+    --color-9:  #e6683c; /* Social media colors often remain the same */
+    --color-10: #dc2743; /* Social media colors often remain the same */
+    --color-11: #cc2366; /* Social media colors often remain the same */
+    --color-12: #bc1888; /* Social media colors often remain the same */
+    --color-13: #0077b5; /* Social media colors often remain the same */
+    --color-14: #1769ff; /* Social media colors often remain the same */
+    --color-15: #ff3333;
+    --color-16: #e0e0e0;
+    --color-17: #e0e0e0;
+    --color-18: #e0e0e0;
+    --color-19: #1a1a1a;
+    --color-20: #2b2b2b;
+    --color-21: #ff6b3d;
+    --color-22: #0d7067;
+    --color-23: #ff4d4d;
+    --color-24: #333;
+    --color-25: #e0e0e0;
+    --color-26: #3a3a3a;
+    --color-27: #2b2b2b;
+    --color-28: #252525;
+    --color-29: #a1a1a1;
+    --color-30: #2b2b2b;
+    --color-31: #bbbbbb;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: var(--color-2);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 7px;
+	position: relative;
+	width: 45px;
+	transform: scale(1);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(27px);
+}
+
+
+.fa-moon {
+	color: var( --color-4);
+}
+
+.fa-sun {
+	color:  var( --color-4);
+}
 
 body {
     font-family: "Lexend Deca", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F9F9F9;
+    background-color: var( --color-1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +126,7 @@ body {
 .button-section {
     margin-top: 0px;
     width: 100%;
-    background-color: #ededed;
+    background-color: var( --color-2);
     padding-bottom: 80px;
     padding-top: 2vw;
    
@@ -26,7 +137,7 @@ h2 {
     text-align: center;
     margin-bottom: 0;
     font-weight: 200;
-    color: #333; 
+    color: var( --color-3); 
 }
 
 h1 {
@@ -35,12 +146,12 @@ h1 {
     font-weight: 700;
     margin: 3px 0 40px 0; /* Adjusted margin-top */
     text-align: center;
-    color: #333; 
+    color: var( --color-3); 
 
 }
 
 .highlight {
-    color: #b31b1b;
+    color: var( --color-4);
 }
 
 .button-wrapper {
@@ -56,7 +167,7 @@ h1 {
     position: relative;
     padding: 20px 0;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var( --color-5);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     width: 75%;
     justify-content: center;
@@ -76,7 +187,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    color: #b31b1b;
+    color: var( --color-4);
     background: none;
     border: none;
     z-index: 1;
@@ -84,26 +195,23 @@ h1 {
     height: auto;
 }
 .button:hover {
-    color: #ffffff !important;
-}
-#facebook:hover ~ .buttonSection-light {
-    background-color: #3b5998;
+    color: #fff;
 }
 
 #instagram:hover ~ .buttonSection-light {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background: linear-gradient(45deg, var( --color-8), var( --color-9), var( --color-10), var( --color-11), var( --color-12));
 }
 
 #linkedin:hover ~ .buttonSection-light {
-    background-color: #0077b5;
+    background-color: var( --color-13);
 }
 
 #behance:hover ~ .buttonSection-light {
-    background-color: #1769ff;
+    background-color: var( --color-14);
 }
 
 #youtube:hover ~ .buttonSection-light {
-    background-color: #ff0000;
+    background-color: var( --color-15);
 }
 
 .buttonSection-light {
@@ -121,7 +229,7 @@ h1 {
     display: none;
 }
 .button-icon > a{
-    color: #b31b1b ;
+    color: var( --color-4) ;
     font-size: 20px;
     padding: 0px 10px;
 }

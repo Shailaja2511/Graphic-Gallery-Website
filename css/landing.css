@@ -4,7 +4,7 @@ html,body {
     font-family: "Lexend Deca", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
+    background-color: var(--color-20);
     text-align: center;
     overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ html,body {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0px;
-    background-color: white;
+    background-color: var( --color-1);
     z-index: 3;
     top: 0;
     flex-wrap: wrap; /* Allows wrapping if space is constrained */
@@ -46,7 +46,7 @@ html,body {
 .logo-landing span {
     font-size: 20px;
     font-weight: 400;
-    color: #e94e1b;
+    color: var(--color-21);
 }
 
 .logo-text {
@@ -62,7 +62,7 @@ html,body {
 .hire-button {
     padding: 5px 20px;
     color: white !important;
-    background-color: #b31b1b;
+    background-color: var( --color-4);
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -89,7 +89,7 @@ html,body {
 }
 
 .hire-button:hover {
-    background-color: #075E54;
+    background-color: var(--color-22);
 }
 
 .hire-button:hover span {
@@ -129,7 +129,7 @@ h1 {
     line-height: 6.1vh;
 }
 .typing-effect {
-    border-right: 2px solid #e94e1b; /* Cursor effect */
+    border-right: 2px solid var(--color-21); /* Cursor effect */
     white-space: nowrap; 
     overflow: hidden; 
     animation: typing 4s steps(30, end) forwards; /* Typing effect only */
@@ -147,7 +147,7 @@ h1 {
 .description {
     font-size: 1rem;
     margin-bottom: 30px;
-    color: #000000;
+    color: var(--color-17);
     font-weight: 400;
 }
 
@@ -159,7 +159,7 @@ h1 {
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #b31b1b;
+    background-color: var( --color-4);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -170,7 +170,7 @@ h1 {
 }
 
 .cta-button:hover {
-    background-color: #c52020;
+    background-color: var(--color-23);
 }
 
 .play-button-container {
@@ -212,7 +212,7 @@ h1 {
 
 .play-button i {
     font-size: 16px;
-    color: #b31b1b;
+    color: var( --color-4);
     line-height: 0;
 
 }
@@ -244,7 +244,7 @@ h1 {
     position: relative;
     width: 90%; 
     max-width: 900px; 
-    background-color: #fff; 
+    background-color: var(--color-24); 
     border-radius: 10px; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
@@ -257,7 +257,7 @@ h1 {
     right: 15px;
     font-size: 30px;
     font-weight: bold;
-    color: #000;
+    color: var(--color-25);
     cursor: pointer;
 }
 #closeButton {

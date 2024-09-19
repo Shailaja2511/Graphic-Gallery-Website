@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 .full-section {
-    background-color: rgb(237, 236, 236); 
+    background-color: var(--color-27); 
     width: 100%; 
     padding: 20px 0; 
     text-align: center;
@@ -22,7 +22,7 @@ h2 {
     text-align: center;
     margin-bottom: 0;
     font-weight: 200;
-    color: #333; 
+    color: var( --color-3); 
 }
 
 h1 {
@@ -31,11 +31,11 @@ h1 {
     font-weight: 700;
     margin: 3px 0 40px 0; /* Adjusted margin-top */
     text-align: center;
-    color: #333; 
+    color: var( --color-3); 
 }
 
 .highlight {
-    color: #b31b1b;
+    color: var( --color-4);
 }
 
 .left-section {
@@ -71,7 +71,7 @@ h1 {
 
 .left-section .work-heading,
 .right-section .work-heading {
-    color: #b31b1b;
+    color: var( --color-4);
     font-family: "Lexend Deca", sans-serif;
     font-size: 2rem;
     padding-left: 0; /* Remove additional padding */
@@ -90,10 +90,10 @@ h1 {
     position: absolute;
     left: 0; 
     top: 0; 
-    background-color: #ebe1e1; 
+    background-color: var(--color-30); 
     padding: 0.5rem; 
     border-radius: 4px; 
-    color: #b31b1b; 
+    color: var( --color-4); 
     font-size: 1.5rem; 
     display: flex;
     justify-content: center;
@@ -105,6 +105,7 @@ h1 {
     font-family: "Lexend Deca", sans-serif;
     font-size: 1.2rem; 
     margin-bottom: 8px; /* Remove margin to align top with icon */
+    color: var(--color-3);
 }
 
 .info-box p {
@@ -112,7 +113,7 @@ h1 {
     font-weight: 350;
     font-size: 1rem; 
     line-height: 1.8;
-    color: #555;
+    color: var(--color-31);
 }
 
 .main-wrapper.reverse-layout .right-section {
@@ -213,6 +214,9 @@ h1 {
     .main-wrapper {
         width: 90%;
         margin: 0px auto; 
+    }
+    .main-wrapper:nth-of-type(2) {
+        flex-direction: column-reverse;
     }
     .full-section h1 {
         font-size: 5vw;

@@ -75,3 +75,22 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHighlight(activeButton);
     }
 });
+
+function toggleTheme() {
+    const root = document.documentElement;
+    if (root.classList.contains('dark-theme')) {
+        root.classList.remove('dark-theme');
+    } else {
+        root.classList.add('dark-theme');
+    }
+}
+
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+    console.log("CALLLED")
+	document.body.classList.toggle('dark');
+    toggleTheme()
+});
