@@ -56,13 +56,13 @@ html,body {
     margin: 0 15px;
     text-decoration: none;
     font-size: 15px;
-    color: hsl(6, 58%, 44%);
+    color: var( --color-4);
     font-weight: 500;
 }
 .hire-button {
     padding: 5px 20px;
     color: white !important;
-    background-color: var( --color-4);
+    background-color: var(--color-23);
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -159,7 +159,7 @@ h1 {
 
 .cta-button {
     padding: 15px 30px;
-    background-color: var( --color-4);
+    background-color: var( --color-23);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -212,7 +212,7 @@ h1 {
 
 .play-button i {
     font-size: 16px;
-    color: var( --color-4);
+    color: var(--color-23);
     line-height: 0;
 
 }

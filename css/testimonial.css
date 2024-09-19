@@ -52,7 +52,7 @@ h1 {
     color: var( --color-4);
 }
 .testimonials-item {
-    background-color: rgb(255, 255, 255);
+    background-color:var(--color-2);
     padding: 20px;
     border-radius: 10px;
     text-align: left; 
@@ -82,7 +82,7 @@ h1 {
     font-size: 24px;
     text-transform: capitalize;
     font-weight: 600;
-    color: black;
+    color: var(--color-3);
     line-height: 1.2;
     margin-bottom: 2px;
     margin-top: 0px;
@@ -92,12 +92,12 @@ h1 {
 
 .testimonials-item .job {
     text-transform: capitalize;
-    color: hsl(0, 0%, 40%);
+    color: var(--color-18);
 }
 
 .testimonials-item p {
     margin-top: 20px;
-    color: hsl(0, 0%, 40%);
+    color: var(--color-18);
     margin-left: 25px; /* Same indentation as text-box */
 }
 

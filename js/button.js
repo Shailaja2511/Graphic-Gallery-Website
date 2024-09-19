@@ -39,7 +39,7 @@ function updateHighlight(button) {
             btn.style.color = '#ffffff'; // White for the active/hovered button
         } else {
             // color based on whether the button is hovered or not
-            btn.style.color = btn.matches(':hover') ? '#ffffff' : '#b31b1b'; // Maintain white if hovered
+            btn.style.color = btn.matches(':hover') ? '#ffffff' : 'var(--color-32)'; // Maintain white if hovered
         }
     });
 }

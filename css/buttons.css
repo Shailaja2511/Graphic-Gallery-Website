@@ -23,15 +23,16 @@
     --color-20:#f3f3f3;
     --color-21:#e94e1b;
     --color-22:#075E54;
-    --color-23:#c52020;
+    --color-23:#b31b1b;
     --color-24:#fff;
     --color-25:#000;
     --color-26:#ececec;
     --color-27:#f3f0f0;
     --color-28:#f5f4f4;
     --color-29:#666;
-    --color-30:#ebe1e1;
+    --color-30:#cdcdcd;
     --color-31:#555;
+    --color-32:#b31b1b;
 }
 
 /* Dark Theme */
@@ -39,7 +40,7 @@
     --color-1: #1a1a1a;
     --color-2: #2b2b2b;
     --color-3:  #e0e0e0;
-    --color-4:  #ff4c4c;
+    --color-4:  #d22525    ;
     --color-5:  #333;
     --color-6:  #ffcccb;
     --color-7:  #3b5998; /* Social media colors often remain the same */
@@ -58,7 +59,7 @@
     --color-20: #2b2b2b;
     --color-21: #ff6b3d;
     --color-22: #0d7067;
-    --color-23: #ff4d4d;
+    --color-23:#b31b1b;
     --color-24: #333;
     --color-25: #e0e0e0;
     --color-26: #3a3a3a;
@@ -67,6 +68,7 @@
     --color-29: #a1a1a1;
     --color-30: #2b2b2b;
     --color-31: #bbbbbb;
+    --color-32:#b9b9b9;
 }
 
 .checkbox {
@@ -75,7 +77,7 @@
 }
 
 .label {
-	background-color: var(--color-2);
+	background-color: var(--color-30);
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
