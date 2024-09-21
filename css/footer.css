@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 .footer {
-    background-color: #2e2d2d; 
     color: #FFFFFF; 
     padding: 0;
     font-family: "Lexend Deca", sans-serif;
@@ -13,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 13vw;
+    background-color: var(--color-33); 
 }
 .img-logo{
     width:50px
@@ -58,8 +58,8 @@
 }
 
 .footer-bottom {
-    background-color: #ffffff; 
-    color: #4A4A4A;
+    background-color: var(--color-1); 
+    color: var( --color-3);
     padding: 15px 13vw;
     display: flex;
     justify-content: space-between;

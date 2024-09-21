@@ -33,6 +33,7 @@
     --color-30:#cdcdcd;
     --color-31:#555;
     --color-32:#b31b1b;
+    --color-33: #2e2d2d;
 }
 
 /* Dark Theme */
@@ -69,6 +70,8 @@
     --color-30: #2b2b2b;
     --color-31: #bbbbbb;
     --color-32:#b9b9b9;
+    --color-33: #131313;
+
 }
 
 .checkbox {

@@ -7,10 +7,79 @@ html,body {
     background-color: #f0f0f0;
     overflow-x: hidden;
 }
-.header-portfolio{
-    width: 100%;
+:root {
+    --color-1: #F9F9F9;
+    --color-2: #ededed;
+    --color-3:  #333;
+    --color-4:#b31b1b;
+    --color-5:#fff;
+    --color-6:#fac;
+    --color-7:#3b5998;
+    --color-8:#f09433;
+    --color-9:#e6683c;
+    --color-10:#dc2743;
+    --color-11:#cc2366;
+    --color-12:#bc1888;
+    --color-13:#0077b5;
+    --color-14:#1769ff;
+    --color-15:#ff0000;
+    --color-16:#232222;
+    --color-17:#000;
+    --color-18:#5a5a5a;
+    --color-19:#fefefe;
+    --color-20:#f3f3f3;
+    --color-21:#e94e1b;
+    --color-22:#075E54;
+    --color-23:#b31b1b;
+    --color-24:#fff;
+    --color-25:#000;
+    --color-26:#ececec;
+    --color-27:#f3f0f0;
+    --color-28:#f5f4f4;
+    --color-29:#666;
+    --color-30:#cdcdcd;
+    --color-31:#555;
+    --color-32:#b31b1b;
+    --color-33: #2e2d2d;
 }
 
+/* Dark Theme */
+.dark-theme {
+    --color-1: #1a1a1a;
+    --color-2: #2b2b2b;
+    --color-3:  #e0e0e0;
+    --color-4:  #d22525    ;
+    --color-5:  #333;
+    --color-6:  #ffcccb;
+    --color-7:  #3b5998; /* Social media colors often remain the same */
+    --color-8:  #f09433; /* Social media colors often remain the same */
+    --color-9:  #e6683c; /* Social media colors often remain the same */
+    --color-10: #dc2743; /* Social media colors often remain the same */
+    --color-11: #cc2366; /* Social media colors often remain the same */
+    --color-12: #bc1888; /* Social media colors often remain the same */
+    --color-13: #0077b5; /* Social media colors often remain the same */
+    --color-14: #1769ff; /* Social media colors often remain the same */
+    --color-15: #ff3333;
+    --color-16: #e0e0e0;
+    --color-17: #e0e0e0;
+    --color-18: #e0e0e0;
+    --color-19: #1a1a1a;
+    --color-20: #2b2b2b;
+    --color-21: #ff6b3d;
+    --color-22: #0d7067;
+    --color-23:#b31b1b;
+    --color-24: #333;
+    --color-25: #e0e0e0;
+    --color-26: #3a3a3a;
+    --color-27: #2b2b2b;
+    --color-28: #252525;
+    --color-29: #a1a1a1;
+    --color-30: #2b2b2b;
+    --color-31: #bbbbbb;
+    --color-32:#b9b9b9;
+    --color-33: #131313;
+
+}
 .header {
     width: 100vw;
     display: flex;
@@ -18,7 +87,7 @@ html,body {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0px;
-    background-color: white;
+    background-color: var( --color-1);
     z-index: 3;
     top: 0;
     flex-wrap: wrap; /* Allows wrapping if space is constrained */
@@ -49,7 +118,7 @@ html,body {
 .logo-landing span {
     font-size: 20px;
     font-weight: 400;
-    color: #e94e1b;
+    color: var(--color-21);
 }
 
 .logo-text {
@@ -59,7 +128,7 @@ html,body {
     margin: 0 15px;
     text-decoration: none;
     font-size: 15px;
-    color: hsl(6, 58%, 44%);
+    color: var( --color-4);
     font-weight: 500;
 }
 .header-portfolio{
@@ -67,17 +136,48 @@ html,body {
     margin-right: auto;
     width: 100vw;
 }
-.hire-button {
-    padding: 5px 20px;
-    color: white !important;
-    background-color: #b31b1b;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    transition: background-color 0.3s, color 0.3s;
-    position: relative;
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: var(--color-30);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 7px;
+	position: relative;
+	width: 45px;
+	transform: scale(1);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(27px);
+}
+
+
+.fa-moon {
+	color: var( --color-4);
+}
+
+.fa-sun {
+	color:  var( --color-4);
 }
 
 .hire-button span {
@@ -97,7 +197,7 @@ html,body {
 }
 
 .hire-button:hover {
-    background-color: #075E54;
+    background-color: var(--color-22);
 }
 
 .hire-button:hover span {
@@ -142,7 +242,7 @@ html,body {
 .full-width-portfolio-banner {
     margin-top: 0;
     width: 100%;
-    background-color: rgb(240, 238, 238);
+    background-color: var(--color-20);
     padding: 0 auto;
     margin-bottom: 70px;
   }
@@ -172,6 +272,7 @@ html,body {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
 }
 .grid-item {
+ 
     width: 100%;
     padding-bottom: 100%; /* Aspect ratio 1:1 */
     background-size: cover;
@@ -181,6 +282,7 @@ html,body {
     transition: opacity 0.6s ease, transform 0.6s ease;
     transition-delay: 0.3s; 
 }
+
 .grid-item.show {
     opacity: 1;
     transform:  translateY(20px);

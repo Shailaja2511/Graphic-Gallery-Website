@@ -369,8 +369,8 @@ h1 {
 /* Header */
 @media (max-width: 1024px) {
     .logo-landing {
-        width: 40%;
-        margin-right: 30px;
+        /* width: 40%; */
+        /* margin-right: 30px; */
     }
 
     .logo-landing span {
@@ -473,7 +473,7 @@ h1 {
 
 @media (max-width: 480px) {
     .logo-landing {
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .logo-landing img {

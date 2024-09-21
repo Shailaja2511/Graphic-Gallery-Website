@@ -75,22 +75,33 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHighlight(activeButton);
     }
 });
+const chk = document.getElementById('chk');
+
+// Initialize theme on page load
+initTheme();
+
+chk.addEventListener('change', () => {
+    toggleTheme();
+});
+
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme'); // Retrieve saved theme
+    if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-theme');
+        chk.checked = true; // Update checkbox state
+    } else {
+        document.documentElement.classList.remove('dark-theme');
+        chk.checked = false; // Update checkbox state
+    }
+}
 
 function toggleTheme() {
     const root = document.documentElement;
     if (root.classList.contains('dark-theme')) {
         root.classList.remove('dark-theme');
+        localStorage.setItem('theme', 'light'); // Save light theme
     } else {
         root.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark'); // Save dark theme
     }
 }
-
-
-
-const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-    console.log("CALLLED")
-	document.body.classList.toggle('dark');
-    toggleTheme()
-});
