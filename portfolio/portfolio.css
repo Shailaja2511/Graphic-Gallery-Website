@@ -222,6 +222,8 @@ html,body {
     justify-content: center;
 }
 .nav-bar button {
+    font-family: "Lexend Deca", sans-serif;
+
     padding: 10px 20px;
     border: 1px solid rgb(188, 187, 187);
     border-radius: 5px;
