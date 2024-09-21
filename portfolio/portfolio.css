@@ -474,8 +474,11 @@ html,body {
     .logo-landing img {
         height: 20px;
     }
-
+    .themeButton{
+        scale: 0.85;
+    }
     .logo-landing span {
+        display: none;
         font-size: 14px;
     }
 
