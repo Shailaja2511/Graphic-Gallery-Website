@@ -8,10 +8,17 @@ html,body {
     text-align: center;
     overflow-x: hidden;
 }
-
-.onloading{
-    display: none !important;
+body > * {
+    opacity: 1 ;
+    transition: opacity 1s 0.2s ease-in-out; /* Add transition for opacity */
 }
+
+.onloading {
+    opacity: 0;
+    visibility: hidden; /* Use visibility instead of display: none */
+    pointer-events: none; /* Optional: Prevent interaction during loading */
+}
+
 
 #loading-screen {
     position: fixed; /* Fixed position to cover the entire viewport */

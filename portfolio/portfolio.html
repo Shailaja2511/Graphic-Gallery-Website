@@ -22,8 +22,8 @@
 </head>
 <body>
     <div id="loading-screen">
-        <lottie-player src="../js/Animation - 1726987487432.json" 
-            background="transparent"  speed="1.4"  style="width: 300px; height: 300px;"autoplay></lottie-player>
+        <lottie-player src="../js/pentool.json" 
+            background="transparent"  speed="0.9"  style="width: 300px; height: 300px;"autoplay></lottie-player>
     </div>
     <!--header section-->
     <section class="onloading header-portfolio">
@@ -385,8 +385,9 @@ window.addEventListener('load', function () {
         document.getElementById('loading-screen').style.display = 'none';
 
         // Remove the 'onloading' class from all child elements of body
-        const allChildren = document.body.getElementsByTagName('*');
+        const allChildren = document.body.children;
         for (let i = 0; i < allChildren.length; i++) {
+            if(allChildren[i].classList.contains('onloading'))
             allChildren[i].classList.remove('onloading');
         }
     });

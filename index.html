@@ -56,7 +56,7 @@
 <body>
 <!-- Loading Screen -->
 <div id="loading-screen">
-    <lottie-player src="js/Animation - 1726987487432.json" 
+    <lottie-player src="js/hi.json" 
         background="transparent"  speed="1.2"  style="width: 300px; height: 300px;"autoplay></lottie-player>
 </div>
     <!--Landing Page Section Starts Here-->
@@ -557,8 +557,9 @@
         document.getElementById('loading-screen').style.display = 'none';
 
         // Remove the 'onloading' class from all child elements of body
-        const allChildren = document.body.getElementsByTagName('*');
+        const allChildren = document.body.children;
         for (let i = 0; i < allChildren.length; i++) {
+            if(allChildren[i].classList.contains('onloading'))
             allChildren[i].classList.remove('onloading');
         }
     });
