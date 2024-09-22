@@ -127,6 +127,14 @@ h1 {
     height: 30px;
 }
 
+.swiper-button-next::after{
+margin-left: 2px;
+}
+.swiper-button-prev::after{
+margin-right: 2px;
+}
+
+
 .swiper-slide {
     width: calc(50% - 15px); 
     box-sizing: border-box; 
