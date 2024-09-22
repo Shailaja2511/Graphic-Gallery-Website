@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../image/fimage/GG-LOGO.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/fimage/GG_LOGO-200px.png">
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Graphic Gallery">
+        <meta property="og:description" content="Explore the best graphic designs and portfolios in our Graphic Gallery. Discover stunning works from top designers.">
+        <meta property="og:image" content="image/fimage/GG-LOGO.png">
+        <meta property="og:url" content="https://graphicgallery.lk">
+        <meta property="og:type" content="website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -379,19 +387,32 @@ function toggleTheme() {
 window.addEventListener('load', function () {
     const lottiePlayer = document.querySelector('lottie-player');
 
-    // Listen for the 'complete' event to fire when the animation finishes
-    lottiePlayer.addEventListener('complete', function () {
-        // Hide the loading screen
-        document.getElementById('loading-screen').style.display = 'none';
+    // Ensure the lottie player is loaded and the event listener is attached before the animation starts
+    if (lottiePlayer) {
+        const onComplete = function () {
+            // Hide the loading screen
+            document.getElementById('loading-screen').style.display = 'none';
 
-        // Remove the 'onloading' class from all child elements of body
-        const allChildren = document.body.children;
-        for (let i = 0; i < allChildren.length; i++) {
-            if(allChildren[i].classList.contains('onloading'))
-            allChildren[i].classList.remove('onloading');
-        }
-    });
+            // Remove the 'onloading' class from all child elements of body
+            const allChildren = document.body.getElementsByTagName('*');
+            for (let i = 0; i < allChildren.length; i++) {
+                if(allChildren[i].classList.contains('onloading')) {
+                    allChildren[i].classList.remove('onloading');
+                }
+            }
+        };
+
+        // Attach the event listener for the 'complete' event
+        lottiePlayer.addEventListener('complete', onComplete);
+
+        // Optional: Fallback in case the event doesn't fire (e.g., if the animation is too short)
+        const fallbackTimeout = setTimeout(onComplete, 5000); // Adjust the timeout as needed
+
+        // If the animation is looping, you may want to manually stop it after the first loop
+        lottiePlayer.loop = false;
+    }
 });
+
     </script>
  
 </body>

@@ -11,13 +11,13 @@ html,body {
 body > * {
     opacity: 1 ;
     transition: opacity 1s 0.2s ease-in-out; /* Add transition for opacity */
-    pointer-events: none !important;
+    visibility: visible;
 }
 
 .onloading {
     opacity: 0;
-    visibility: hidden; /* Use visibility instead of display: none */
-    pointer-events: none; /* Optional: Prevent interaction during loading */
+    visibility: hidden;
+    pointer-events: none; 
 }
 
 
