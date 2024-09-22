@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="/image/fimage/GG-LOGO.png" type="image/png">
-        
-    <!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/image/fimage/GG-LOGO-180.png">
 
-<!-- Additional Favicon Formats -->
-<link rel="icon" type="image/png" sizes="32x32" href="/image/fimage/GG-LOGO-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/image/fimage/GG-LOGO-16.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/fimage/GG-LOGO-180.png">
+
+    <!-- Additional Favicon Formats -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/fimage/GG-LOGO-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/fimage/GG-LOGO-16.png">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:site_name" content="Graphic Gallery">
     <meta property="og:title" content="Graphic Gallery">
-    <meta property="og:description" content="Explore the best graphic designs and portfolios in our Graphic Gallery. Discover stunning works from top designers.">
+    <meta property="og:description"
+        content="Explore the best graphic designs and portfolios in our Graphic Gallery. Discover stunning works from top designers.">
     <meta property="og:image" itemprop="image" content="https://graphicgallery.lk/image/fimage/GG-LOGO-180.png">
     <meta property="og:url" content="https://graphicgallery.lk">
     <meta property="og:type" content="website">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -25,11 +27,13 @@
     <link rel="stylesheet" href="../css/landing.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!--footer link-->
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
-        (function() {
+        (function () {
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'dark') {
                 document.documentElement.classList.add('dark-theme');
@@ -37,40 +41,41 @@
         })();
     </script>
 </head>
+
 <body>
     <div id="loading-screen">
-        <lottie-player src="../js/pentool.json" 
-            background="transparent"  speed="0.9"  style="width: 300px; height: 300px;"autoplay></lottie-player>
+        <lottie-player src="../js/pentool.json" background="transparent" speed="0.9"
+            style="width: 300px; height: 300px;" autoplay></lottie-player>
     </div>
     <!--header section-->
     <section class="onloading header-portfolio">
-    <header class="header">
-        <div class="logo-landing">
-            <a href="../index.html">
-                <img src="../image/fimage/GG-LOGO.png" alt="Logo">
-                <span class="logo-text">GRAPHIC GALLERY</span>
-            </a>
-        </div>
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="https://wa.me/94776455809" class="hire-button"><span>Hire Us</span></a>
-            <div class="themeButton">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
+        <header class="header">
+            <div class="logo-landing">
+                <a href="../index.html">
+                    <img src="../image/fimage/GG-LOGO.png" alt="Logo">
+                    <span class="logo-text">GRAPHIC GALLERY</span>
+                </a>
             </div>
-        </div>
-    </header>
-</section>
- <!--Image Section Starts Here-->
- <div class="onloading full-width-portfolio-banner">
-    <img src="plimage/PORTFOLIO_COVER_IMAGE.png" alt="Banner Image">
-</div>
-<!--Image Section Ends Here-->
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://wa.me/94776455809" class="hire-button"><span>Hire Us</span></a>
+                <div class="themeButton">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!--Image Section Starts Here-->
+    <div class="onloading full-width-portfolio-banner">
+        <img src="plimage/PORTFOLIO_COVER_IMAGE.png" alt="Banner Image">
+    </div>
+    <!--Image Section Ends Here-->
     <div class="onloading nav-bar">
         <button class="active" data-category="logo">Logo</button>
         <button data-category="business-card">Business Card</button>
@@ -174,7 +179,7 @@
 
                 <!-- Repeat .menu-item for other images -->
             </div>
-            
+
         </div>
 
         <!-- Social Media items -->
@@ -259,42 +264,42 @@
     </div>
     <script>
         const buttons = document.querySelectorAll('.nav-bar button');
-const gridItems = document.querySelectorAll('.grid-item');
-const menuCategory = document.getElementById('menu');
+        const gridItems = document.querySelectorAll('.grid-item');
+        const menuCategory = document.getElementById('menu');
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Handle button active state
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Handle button active state
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-        // Get the selected category
-        const category = button.getAttribute('data-category');
+                // Get the selected category
+                const category = button.getAttribute('data-category');
 
-        // Adjust layout and visibility based on category
-        document.querySelector('.grid-container').className = 'grid-container'; // Reset layout classes
+                // Adjust layout and visibility based on category
+                document.querySelector('.grid-container').className = 'grid-container'; // Reset layout classes
 
-        if (category === 'menu') {
-            menuCategory.classList.remove('hidden');
-        } else {
-            menuCategory.classList.add('hidden');
-        }
+                if (category === 'menu') {
+                    menuCategory.classList.remove('hidden');
+                } else {
+                    menuCategory.classList.add('hidden');
+                }
 
-        // Apply the specific category layout class
-        if (category === 'business-card' || category === 'menu' || category === 'print-design') {
-            document.querySelector('.grid-container').classList.add(`${category}-layout`);
-        }
+                // Apply the specific category layout class
+                if (category === 'business-card' || category === 'menu' || category === 'print-design') {
+                    document.querySelector('.grid-container').classList.add(`${category}-layout`);
+                }
 
-        // Toggle visibility of grid items
-        gridItems.forEach(item => {
-            if (item.classList.contains(category)) {
-                item.classList.remove('hidden');
-            } else {
-                item.classList.add('hidden');
-            }
+                // Toggle visibility of grid items
+                gridItems.forEach(item => {
+                    if (item.classList.contains(category)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
         });
-    });
-});
 
         // Menu scrolling functionality
         document.querySelectorAll('#menu .menu-item').forEach((item) => {
@@ -319,8 +324,9 @@ buttons.forEach(button => {
         <div class="footer-top">
             <a href="#"><img src="../image/fimage/GG-LOGO.png" class="img-logo" alt=""></a>
             <div class="contact-info">
-                <a href="mailto:graphicgallerylk@gmail.com"><i class="fas fa-envelope"></i> graphicgallerylk@gmail.com</a>
-            <a href="https://wa.me/94776455809"><i class="fa-solid fa-phone"></i>+94 77 6455 809</a>
+                <a href="mailto:graphicgallerylk@gmail.com"><i class="fas fa-envelope"></i>
+                    graphicgallerylk@gmail.com</a>
+                <a href="https://wa.me/94776455809"><i class="fa-solid fa-phone"></i>+94 77 6455 809</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -338,91 +344,92 @@ buttons.forEach(button => {
     <!--animation for all pages-->
     <script>
         // Function to add 'show' class to elements in view
-function animateOnScroll() {
-    const gridItems = document.querySelectorAll('.grid-item');
-    const screenPosition = window.innerHeight;
+        function animateOnScroll() {
+            const gridItems = document.querySelectorAll('.grid-item');
+            const screenPosition = window.innerHeight;
 
-    gridItems.forEach(item => {
-        const itemPosition = item.getBoundingClientRect().top;
+            gridItems.forEach(item => {
+                const itemPosition = item.getBoundingClientRect().top;
 
-        if (itemPosition < screenPosition - 100) {
-            item.classList.add('show');
-        } else {
-            item.classList.remove('show');
-        }
-    });
-}
-
-// Initial check to show items on load
-document.addEventListener('DOMContentLoaded', () => {
-    animateOnScroll(); // Initial call to handle elements in view on page load
-});
-
-// Event listener for scrolling
-window.addEventListener('scroll', animateOnScroll);
-
-
-const chk = document.getElementById('chk');
-
-// Initialize theme on page load
-initTheme();
-
-chk.addEventListener('change', () => {
-    toggleTheme();
-});
-
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme'); // Retrieve saved theme
-    if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark-theme');
-        chk.checked = true; // Update checkbox state
-    } else {
-        document.documentElement.classList.remove('dark-theme');
-        chk.checked = false; // Update checkbox state
-    }
-}
-
-function toggleTheme() {
-    const root = document.documentElement;
-    if (root.classList.contains('dark-theme')) {
-        root.classList.remove('dark-theme');
-        localStorage.setItem('theme', 'light'); // Save light theme
-    } else {
-        root.classList.add('dark-theme');
-        localStorage.setItem('theme', 'dark'); // Save dark theme
-    }
-}
-
-window.addEventListener('load', function () {
-    const lottiePlayer = document.querySelector('lottie-player');
-
-    // Ensure the lottie player is loaded and the event listener is attached before the animation starts
-    if (lottiePlayer) {
-        const onComplete = function () {
-            // Hide the loading screen
-            document.getElementById('loading-screen').style.display = 'none';
-
-            // Remove the 'onloading' class from all child elements of body
-            const allChildren = document.body.getElementsByTagName('*');
-            for (let i = 0; i < allChildren.length; i++) {
-                if(allChildren[i].classList.contains('onloading')) {
-                    allChildren[i].classList.remove('onloading');
+                if (itemPosition < screenPosition - 100) {
+                    item.classList.add('show');
+                } else {
+                    item.classList.remove('show');
                 }
+            });
+        }
+
+        // Initial check to show items on load
+        document.addEventListener('DOMContentLoaded', () => {
+            animateOnScroll(); // Initial call to handle elements in view on page load
+        });
+
+        // Event listener for scrolling
+        window.addEventListener('scroll', animateOnScroll);
+
+
+        const chk = document.getElementById('chk');
+
+        // Initialize theme on page load
+        initTheme();
+
+        chk.addEventListener('change', () => {
+            toggleTheme();
+        });
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme'); // Retrieve saved theme
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+                chk.checked = true; // Update checkbox state
+            } else {
+                document.documentElement.classList.remove('dark-theme');
+                chk.checked = false; // Update checkbox state
             }
-        };
+        }
 
-        // Attach the event listener for the 'complete' event
-        lottiePlayer.addEventListener('complete', onComplete);
+        function toggleTheme() {
+            const root = document.documentElement;
+            if (root.classList.contains('dark-theme')) {
+                root.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light'); // Save light theme
+            } else {
+                root.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark'); // Save dark theme
+            }
+        }
 
-        // Optional: Fallback in case the event doesn't fire (e.g., if the animation is too short)
-        const fallbackTimeout = setTimeout(onComplete, 5000); // Adjust the timeout as needed
+        window.addEventListener('load', function () {
+            const lottiePlayer = document.querySelector('lottie-player');
 
-        // If the animation is looping, you may want to manually stop it after the first loop
-        lottiePlayer.loop = false;
-    }
-});
+            // Ensure the lottie player is loaded and the event listener is attached before the animation starts
+            if (lottiePlayer) {
+                const onComplete = function () {
+                    // Hide the loading screen
+                    document.getElementById('loading-screen').style.display = 'none';
+
+                    // Remove the 'onloading' class from all child elements of body
+                    const allChildren = document.body.getElementsByTagName('*');
+                    for (let i = 0; i < allChildren.length; i++) {
+                        if (allChildren[i].classList.contains('onloading')) {
+                            allChildren[i].classList.remove('onloading');
+                        }
+                    }
+                };
+
+                // Attach the event listener for the 'complete' event
+                lottiePlayer.addEventListener('complete', onComplete);
+
+                // Optional: Fallback in case the event doesn't fire (e.g., if the animation is too short)
+                const fallbackTimeout = setTimeout(onComplete, 5000); // Adjust the timeout as needed
+
+                // If the animation is looping, you may want to manually stop it after the first loop
+                lottiePlayer.loop = false;
+            }
+        });
 
     </script>
- 
+
 </body>
+
 </html>
