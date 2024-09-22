@@ -56,7 +56,7 @@
 
     <!--footer Page Links-->
     <link rel="stylesheet" href="css/footer.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.2.0/dist/lottie-player.js"></script>
     <script>
         (function () {
             const savedTheme = localStorage.getItem('theme');
@@ -70,7 +70,8 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen">
-        <lottie-player src="js/hi.json" background="transparent" speed="1.2" style="width: 300px; height: 300px;"
+        <lottie-player src="js/hi.json" background="transparent" speed="1.1"
+         style="width: 300px; height: 300px;"
           autoplay></lottie-player>
     </div>
     <!--Landing Page Section Starts Here-->
@@ -573,12 +574,9 @@
             },
             loop: false
         });
-  // Function to hide the loading screen and remove the 'onloading' class
-const onComplete = function () {
-    // Hide the loading screen
+const onComplete = function (s) {
     document.getElementById('loading-screen').style.display = 'none';
 
-    // Remove the 'onloading' class from all child elements of body
     const allChildren = document.body.getElementsByTagName('*');
     for (let i = 0; i < allChildren.length; i++) {
         if (allChildren[i].classList.contains('onloading')) {
@@ -587,28 +585,10 @@ const onComplete = function () {
     }
 };
 
-// Function to attach the event listener to the Lottie player
-const initializeLottie = function () {
-    const lottiePlayer = document.querySelector('lottie-player');
-
-    if (lottiePlayer) {
-        // Attach the event listener for the 'complete' event
-        lottiePlayer.addEventListener('complete', onComplete);
-
-        // Ensure the animation stops after the first loop
-        lottiePlayer.loop = false;
-    } else {
-        // Fallback if the Lottie player is not found
-        console.error('Lottie player not found');
-    }
-};
-
-// Check if the page is fully loaded
 window.addEventListener('load', function () {
-    initializeLottie();
-
-    // Optional: Fallback in case the Lottie complete event doesn't fire (e.g., if the animation is too short)
-    const fallbackTimeout = setTimeout(onComplete, 1000); // Adjust the timeout as needed
+    const fallbackTimeout = setTimeout(function() {
+        onComplete("FALLBACK");
+    }, 2400);
 });
 
 

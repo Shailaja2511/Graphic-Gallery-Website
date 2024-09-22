@@ -10,7 +10,7 @@ html,body {
 }
 body > * {
     opacity: 1 ;
-    transition: opacity 1s 0.2s ease-in-out; /* Add transition for opacity */
+    transition: opacity 1.2s 0.2s ease-in-out; /* Add transition for opacity */
     visibility: visible;
 }
 
@@ -377,7 +377,8 @@ h1 {
         max-height: 60vh;
     }
     h1:first-of-type{
-        font-size:1.7rem;
+        font-size:1.6rem;
+        line-height: 2.0rem;
         width: 95%;
         margin: 0px auto 30px auto;
     }
@@ -386,6 +387,9 @@ h1 {
 @media (max-width: 480px) {
     .image-wrapper img {
         max-height: 50vh;
+    }
+    .hire-button:hover::after {
+        font-size: 10px;
     }
 }
 
@@ -465,7 +469,7 @@ h1 {
     }
 
     .logo-landing img {
-        height: 25px;
+        height: 27px;
     }
 
     .logo-landing span {
@@ -518,7 +522,7 @@ h1 {
     }
 
     .logo-landing img {
-        height: 20px;
+        height: 27px;
     }
 
     .logo-landing span {
