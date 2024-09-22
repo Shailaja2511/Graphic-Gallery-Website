@@ -186,6 +186,8 @@ h1 {
 .description {
     font-size: 1rem;
     margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
     color: var(--color-17);
     font-weight: 400;
 }
@@ -432,7 +434,7 @@ h1 {
     }
 
     .description {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
     }
 
     .cta-button {
@@ -486,7 +488,7 @@ h1 {
     }
 
     .description {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .cta-button {
