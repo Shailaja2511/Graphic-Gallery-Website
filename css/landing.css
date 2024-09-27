@@ -383,7 +383,7 @@ h1 {
         margin: 0px auto 30px auto;
     }
     #youtubeVideo{
-        width: 86vw;
+        width: 85vw;
         height: 48.38vw;
         /* clip-path: inset(0% 0% 0% 0% round px); */
         border: none;
@@ -410,7 +410,7 @@ h1 {
     }
 
     #youtubeVideo{
-        width: 86vw;
+        width: 85vw;
         height: 48.38vw;
         /* clip-path: inset(0% 0% 0% 0% round 10px); */
         border: none;
