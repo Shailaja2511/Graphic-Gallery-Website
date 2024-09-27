@@ -205,6 +205,13 @@
                     youtubeVideo.src = '';
                     videoPopup.style.display = 'none';
                 });
+                document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.key === 'Esc') {
+        // Stop the video by clearing the src
+        youtubeVideo.src = '';
+        videoPopup.style.display = 'none';
+    }
+});
 
                 videoPopup.addEventListener('click', function (event) {
                     // Close the popup if the background is clicked (not the video or content)
