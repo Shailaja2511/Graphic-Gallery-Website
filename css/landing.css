@@ -252,7 +252,8 @@ h1 {
 }
 
 .play-button i {
-    font-size: 16px;
+    margin-left: 0.2rem;
+    font-size: 1rem;
     color: var(--color-23);
     line-height: 0;
 
@@ -280,11 +281,15 @@ h1 {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
-
+#youtubeVideo{
+    width: 80vw;
+    height: 45vw;
+    clip-path: inset(0% 0% 0% 0% round 25px);
+    border: none;
+}
 .video-popup-content {
     position: relative;
-    width: 90%; 
-    max-width: 900px; 
+    width: 82vw; 
     background-color: var(--color-24); 
     border-radius: 10px; 
     padding: 20px;
@@ -313,13 +318,7 @@ h1 {
     padding: 20px;
 }
 
-/* Video Frame */
-.video-popup iframe {
-    width: 100%;
-    height: 56.25vw; /* 16:9 Aspect Ratio */
-    max-height: 80vh; 
-    border: none;
-}
+
 .image-container {
     width: 100%;
     overflow: hidden;
@@ -328,7 +327,7 @@ h1 {
 .slider-row {
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     overflow: hidden;
     height: 100%;
 }
@@ -382,6 +381,23 @@ h1 {
         width: 95%;
         margin: 0px auto 30px auto;
     }
+    #youtubeVideo{
+        width: 86vw;
+        height: 48.38vw;
+        clip-path: inset(0% 0% 0% 0% round 10px);
+        border: none;
+    }
+    .video-popup-content {
+        width:  90vw;
+        border-radius: 10px; 
+        padding: 3vw;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    }
+    #closeButton{
+        top: 1vw;
+        right: 2vw;
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -390,6 +406,24 @@ h1 {
     }
     .hire-button:hover::after {
         font-size: 10px;
+    }
+
+    #youtubeVideo{
+        width: 86vw;
+        height: 48.38vw;
+        clip-path: inset(0% 0% 0% 0% round 10px);
+        border: none;
+    }
+    .video-popup-content {
+        width:  88vw;
+        border-radius: 10px; 
+        padding: 7vw 3vw 3vw 3vw;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    }
+    #closeButton{
+        top: 1vw;
+        right: 2vw;
+        font-size: 1.6rem;
     }
 }
 
@@ -569,11 +603,11 @@ h1 {
     }
 
     .play-button {
-        width: 30px;
-        height: 30px;
+        width: 36px;
+        height: 36px;
     }
 
     .play-button span {
-        font-size: 16px;
+        /* font-size: 16px; */
     }
 }

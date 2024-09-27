@@ -277,18 +277,25 @@ html,body {
  
     width: 100%;
     padding-bottom: 100%; /* Aspect ratio 1:1 */
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     opacity: 1;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    transition-delay: 0.3s; 
+    transform: scale(1);
+    transition: background-size 0.2s ease-out;
+    clip-path: inset(0% round 0px);
+
+  
+}
+.grid-item:hover{
+    /* transform:scale(1.04);
+    clip-path: inset(2.0% round 0px); */
+        background-size: 110%; /* scale up the background image */
 }
 
 .grid-item.show {
     opacity: 1;
-    transform:  translateY(20px);
-    transition-delay: 0s;
+    /* transform:  translateY(20px);
+    transition-delay: 0s; */
 }
 .grid-item:nth-child(1) {
     --grid-index: 0;
